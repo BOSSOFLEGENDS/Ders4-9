@@ -30,7 +30,7 @@ def on_closing(root, client_socket):
 def get_chat_window():
     root = tk.Tk()
     root.title("Live Chat")
-    root.geometry("300x500+600+50")
+    root.geometry("300x600+600+100")
 
     chat_box = scrolledtext.ScrolledText(root, wrap=tk.WORD, state=tk.DISABLED)
     chat_box.pack(fill=tk.BOTH, expand=True)
@@ -38,8 +38,8 @@ def get_chat_window():
     message_entry = tk.Entry(root, width=50)
     message_entry.pack(pady=5)
 
-    server_ip = "192.168.0.98"
-    server_port = 12345
+    server_ip = "192.168.0.97"
+    server_port = 9000
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((server_ip, server_port))
 

@@ -5,7 +5,7 @@ import threading
 hostname = socket.gethostname()
 server_ip = socket.gethostbyname(hostname)
 print(server_ip)
-server_port = 5000
+server_port = 9000
 
 # Create a socket to listen for incoming connections
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
